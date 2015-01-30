@@ -23,6 +23,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tomasr/molokai'
+Plugin 'hdima/python-syntax'
 
 call vundle#end()
 
@@ -30,6 +31,7 @@ colorscheme Tomorrow-Night-Bright
 filetype plugin indent on
 
 syntax on
+set t_Co=256
 set tabstop=4
 set shiftwidth=4
 set expandtab
