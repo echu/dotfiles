@@ -24,6 +24,7 @@ Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tomasr/molokai'
 Plugin 'hdima/python-syntax'
+Plugin 'derekwyatt/vim-scala'
 
 call vundle#end()
 
