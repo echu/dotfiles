@@ -44,3 +44,12 @@ set sts=4
 
 "automatically remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+"open NERDTree on the right
+let g:NERDTreeWinPos = "right"
+
+"map NERDTree to ,,
+map ,, :NERDTreeToggle<CR>
+
+"close NERDTree if it's the only window left
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
