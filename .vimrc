@@ -25,10 +25,11 @@ Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'tomasr/molokai'
 Plugin 'hdima/python-syntax'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'JuliaLang/julia-vim'
 
 call vundle#end()
 
-colorscheme Tomorrow-Night-Bright
+colorscheme molokai
 filetype plugin indent on
 
 syntax on
