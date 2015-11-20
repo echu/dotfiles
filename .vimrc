@@ -54,3 +54,6 @@ map ,, :NERDTreeToggle<CR>
 
 "close NERDTree if it's the only window left
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+"set git commit message
+autocmd Filetype gitcommit setlocal spell textwidth=72
