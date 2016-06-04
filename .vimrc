@@ -38,7 +38,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
-set textwidth=79
+set textwidth=72
 set wrap
 set ai
 set sts=4
