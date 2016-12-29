@@ -4,11 +4,8 @@ filetype off
 set rtp +=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'amdt/vim-niji'
-Plugin 'guns/vim-clojure-highlight'
-Plugin 'guns/vim-clojure-static'
-Plugin 'guns/vim-sexp'
 Plugin 'tpope/vim-fireplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-leiningen'
@@ -17,15 +14,21 @@ Plugin 'tpope/vim-classpath'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
-Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
-Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'vim-airline/vim-airline'
+
+"color schemes
 Plugin 'tomasr/molokai'
-Plugin 'hdima/python-syntax'
+Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+
+"languages
 Plugin 'derekwyatt/vim-scala'
 Plugin 'JuliaLang/julia-vim'
+Plugin 'hdima/python-syntax'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-sexp'
 
 call vundle#end()
 
@@ -46,14 +49,13 @@ set sts=4
 "automatically remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-"open NERDTree on the right
-let g:NERDTreeWinPos = "right"
-
-"map NERDTree to ,,
-map ,, :NERDTreeToggle<CR>
-
-"close NERDTree if it's the only window left
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
 "set git commit message
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+"set js tab spaces
+autocmd Filetype javascript setlocal nowrap ts=2 sts=2 sw=2
+
+"set html tab spaces
+autocmd Filetype html setlocal nowrap ts=2 sts=2 sw=2
+
+let g:airline_powerline_fonts = 1
