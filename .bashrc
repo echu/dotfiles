@@ -4,6 +4,23 @@ get_sha() {
 }
 export CLICOLOR=1
 
+# Some sane defaults
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
+
+# Append to the Bash history file, rather than overwriting it
+shopt -s histappend;
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
+
+# to bootstrap, run `brew install git bash-completion`
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+if hash brew 2>/dev/null; then
+    export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+fi
+
 if hash git 2>/dev/null; then
     # these are the locations on a mac. it's different on linux
     source /usr/local/git/contrib/completion/git-completion.bash
@@ -28,3 +45,6 @@ fi
 if hash fasd 2>/dev/null; then
     eval "$(fasd --init auto)"
 fi
+
+# local npm binaries
+PATH=$PATH:$HOME/.npmlocal/bin
