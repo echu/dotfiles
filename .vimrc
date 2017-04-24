@@ -56,6 +56,7 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 
 "set js tab spaces
 autocmd Filetype javascript setlocal nowrap ts=2 sts=2 sw=2
+autocmd Filetype json setlocal nowrap ts=2 sts=2 sw=2
 
 "set html tab spaces
 autocmd Filetype html setlocal nowrap ts=2 sts=2 sw=2
