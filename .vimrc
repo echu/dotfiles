@@ -21,6 +21,7 @@ Plugin 'vim-airline/vim-airline'
 "color schemes
 Plugin 'tomasr/molokai'
 Plugin 'chriskempson/tomorrow-theme', {'rtp': 'vim/'}
+Plugin 'jdkanani/vim-material-theme'
 
 "languages
 Plugin 'derekwyatt/vim-scala'
@@ -32,10 +33,11 @@ Plugin 'guns/vim-sexp'
 
 call vundle#end()
 
-colorscheme molokai
+colorscheme material-theme
 filetype plugin indent on
 
 syntax on
+set background=dark
 set t_Co=256
 set tabstop=4
 set shiftwidth=4
