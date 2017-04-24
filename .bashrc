@@ -46,5 +46,11 @@ if hash fasd 2>/dev/null; then
     eval "$(fasd --init auto)"
 fi
 
+
+if [ -f /usr/local/etc/profile.d/z.sh ]; then
+    export _Z_NO_RESOLVE_SYMLINKS=1
+    . /usr/local/etc/profile.d/z.sh
+fi
+
 # local npm binaries
 PATH=$PATH:$HOME/.npmlocal/bin
