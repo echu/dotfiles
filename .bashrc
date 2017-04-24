@@ -53,4 +53,4 @@ if [ -f /usr/local/etc/profile.d/z.sh ]; then
 fi
 
 # local npm binaries
-PATH=$PATH:$HOME/.npmlocal/bin
+export PATH=$PATH:$HOME/.npmlocal/bin
