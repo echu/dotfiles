@@ -22,9 +22,9 @@ if hash brew 2>/dev/null; then
 fi
 
 if hash git 2>/dev/null; then
-    # these are the locations on a mac. it's different on linux
-    source /usr/local/git/contrib/completion/git-completion.bash
-    source /usr/local/git/contrib/completion/git-prompt.sh
+    # these are the locations on a mac installed by homebrew. it's different on linux
+    #source /usr/local/git/contrib/completion/git-completion.bash
+    #source /usr/local/git/contrib/completion/git-prompt.sh
     # these are the locations on linux. it's different on a mac
     #source /usr/share/git-core/contrib/completion/git-completion.bash
     #source /usr/share/git-core/contrib/completion/git-prompt.sh
