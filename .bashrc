@@ -54,3 +54,7 @@ fi
 
 # local npm binaries
 export PATH=$PATH:$HOME/.npmlocal/bin
+
+if [ -f $HOME/.secrets ]; then
+    source $HOME/.secrets
+fi
