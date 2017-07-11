@@ -61,4 +61,7 @@ autocmd Filetype json setlocal nowrap ts=2 sts=2 sw=2
 "set html tab spaces
 autocmd Filetype html setlocal nowrap ts=2 sts=2 sw=2
 
+"set yaml tab spaces
+autocmd Filetype yaml setlocal nowrap ts=2 sts=2 sw=2
+
 let g:airline_powerline_fonts = 1

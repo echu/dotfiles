@@ -54,6 +54,10 @@ fi
 
 # local npm binaries
 export PATH=$PATH:$HOME/.npmlocal/bin
+# local redis 2.8 install..
+export PATH=$PATH:/usr/local/opt/redis@2.8/bin
+# source gnubin for homebrew
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 if [ -f $HOME/.secrets ]; then
     source $HOME/.secrets
