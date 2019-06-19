@@ -62,3 +62,6 @@ export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 if [ -f $HOME/.secrets ]; then
     source $HOME/.secrets
 fi
+
+# requires silversurfer-ag to be installed
+export FZF_DEFAULT_COMMAND='ag -g ""' 
